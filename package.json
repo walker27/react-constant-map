@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "react-constant-map",
   "main": "index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walker27/react-constant-map.git"
+  },
   "scripts": {},
   "keywords": [
     "react",
@@ -10,6 +14,10 @@
   ],
   "author": "walker27",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walker27/react-constant-map/issues"
+  },
+  "homepage": "https://github.com/walker27/react-constant-map",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
