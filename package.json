@@ -1,0 +1,25 @@
+{
+  "name": "react-constant-map",
+  "version": "1.0.0",
+  "description": "react-constant-map",
+  "main": "index.tsx",
+  "scripts": {},
+  "keywords": [
+    "react",
+    "react-constant-map"
+  ],
+  "author": "walker27",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "awesome-typescript-loader": "^5.2.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
