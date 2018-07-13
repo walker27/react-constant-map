@@ -1,3 +1,4 @@
+/// <reference path="./index.d.ts" />
 import * as React from 'react';
 import * as Promise from 'promise';
 
@@ -5,8 +6,7 @@ const noop = () => new Promise(() => ({}));
 
 // 后期改成Map或WeakMap
 const store = {};
-
-function ConstantMap(promisFetch: () => Promise<any> = noop, storeKey: any = new Date().getTime()) {
+function constantMap (promisFetch = noop, storeKey = new Date().getTime()) {
   return class ConstantMapComponent extends React.Component<{ value: any }> {
     state = {
       hash: null,
@@ -30,4 +30,4 @@ function ConstantMap(promisFetch: () => Promise<any> = noop, storeKey: any = new
   };
 }
 
-export default ConstantMap;
+export default constantMap;
