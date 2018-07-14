@@ -1,7 +1,6 @@
 import * as React from 'react';
-import * as Promise from 'promise';
 
-const noop = () => new Promise(() => ({}));
+const noop = async () => {};
 
 // 后期改成Map或WeakMap
 const store = {};
@@ -10,16 +9,14 @@ function constantMap (promisFetch = noop, storeKey = new Date().getTime()) {
     state = {
       hash: null,
     };
-    componentDidMount() {
+    async componentDidMount() {
       if (store[storeKey]) {
         this.setState({ hash: store[storeKey] });
         return;
       }
-      promisFetch()
-        .then((hash) => {
-          this.setState({ hash });
-          store[storeKey] = hash;
-        });
+      const hash =  await promisFetch();
+      this.setState({ hash });
+      store[storeKey] = hash;
     }
     render() {
       const { value: key } = this.props;
