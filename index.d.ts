@@ -1,6 +1,6 @@
-/// <reference types="react-dom" />
+/// <reference types="react" />
 
-type constantMapFunc = (promisFetch?: () => Promise<any>, storeKey?: any) => React.Component<{ value: any }>;
+type constantMapFunc = (promisFetch?: () => Promise<any>, storeKey?: any) => React.ComponentClass<{ value: any }>;
 declare const constantMap: constantMapFunc;
 export = constantMap;
 export as namespace constantMap;
