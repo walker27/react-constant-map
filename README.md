@@ -23,7 +23,7 @@
         };
       }
       
-      export default constantHOC(fakeService, 'storeKey');
+      export default ReactConstantMapHOC(fakeService, 'storeKey');
     ```
 
     + index.js
